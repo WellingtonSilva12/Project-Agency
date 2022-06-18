@@ -4,18 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Digital Agency</title>
   </head>
-  <body>
-    <main>
+  <body class="main">
+    <header>
+      <nav>
+        <div class="logo">Digital Agency</div>
+        <div class="menu-btn">
+          <i class="bx bx-menu" onclick="menuShow()"></i>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#" onclick="menuShow()">home</a></li>
+          <li><a href="#" onclick="menuShow()">about</a></li>
+          <li><a href="#" onclick="menuShow()">testimonials</a></li>
+          <li><a href="#" onclick="menuShow()">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
       <section class="hero">
         <div class="content-hero">
-          <h1>Building digital products, brands & experience</h1>
+          <h1>Building Digital Products, Brands & Experience</h1>
           <p>
             Digital Agency is your online team mangement tool that easy and
             prompt
           </p>
-          <button>CONTACT US</button>
+          <button class="button">CONTACT US</button>
           <img
             src="./assets/img/business-people-discussing-business-idea.png"
             alt="business-people-discussing-business-idea"
@@ -38,7 +64,7 @@
             Commonly used in the graphic, print & publishing industris for
             previewing visual layout and mockups
           </p>
-          | seta para baixo |
+          <i class="bx bx-down-arrow-alt"></i>
           <img
             src="./assets/img/designer-team-working-on-creative-design.png"
             alt="designer-team-working-on-creative-design"
@@ -52,7 +78,7 @@
             Commonly used in the graphic, print & publishing industris for
             previewing visual layout and mockups
           </p>
-          | seta para baixo |
+          <i class="bx bx-down-arrow-alt"></i>
           <img
             src="./assets/img/businessman-analyzing-data.png"
             alt="businessman-analyzing-data"
@@ -96,20 +122,40 @@
             We work with Brans, Startups, to SMEs. Colaborate for more impact
             and growt
           </p>
-          <button>CONTACT US</button>
+          <button class="button">CONTACT US</button>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <h5>Digital Agency</h5>
-      <p>Building digital products, brands & experience</p>
-      <div class="resources">
-        <h5>Resources</h5>
-        <p>Guides</p>
-        <p>Blog</p>
-        <p>Customer Stories</p>
-        <p>Glossery</p>
+    <footer class="">
+      <div class="footer">
+        <h5>Digital Agency</h5>
+        <p>Building digital products, brands & experience</p>
+        <div class="resources">
+          <h5>Resources</h5>
+          <p><a href="">Guides</a></p>
+          <p><a href="">Blog</a></p>
+          <p><a href="">Customer Stories</a></p>
+          <p><a href="">Glossery</a></p>
+        </div>
+        <div class="company">
+          <h5>Company</h5>
+          <p><a href="">About Us</a></p>
+          <p><a href="">Careers</a></p>
+          <p><a href="">Partners</a></p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+        <div class="social-media">
+          <h5>Social Media</h5>
+          <p><a href="">Linkedin</a></p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Instagram</a></p>
+          <p><a href="">Twitter</a></p>
+        </div>
+      </div>
+      <div class="rodape">
+        <p>&copy; Wellington: Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
