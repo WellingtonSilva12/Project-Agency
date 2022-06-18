@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  text-align: center;
+  background-color: #fdfcfc;
+  color: #272d38;
+}
+
+.wrapper {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/* Mobile navigation menu area */
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 5px;
+}
+
+li a:hover {
+  border-bottom: 2px solid #fff;
+  border-radius: 3px;
+}
+
+nav {
+  display: flex;
+  height: 8vh;
+  width: 100%;
+  background-color: #23232e;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3 ease;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 28px;
+  padding-top: 20px;
+  display: none;
+}
+
+/*SECTION HERO*/
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-top: 5rem;
+}
+.hero p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+}
+.button {
+  border: none;
+  background-color: #8eadd5;
+  color: #fff;
+  padding: 1rem 2.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 4.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: rgb(95, 128, 170);
+}
+.hero img {
+  width: 35.8rem;
+  margin-bottom: 12rem;
+}
+
+/*SECTION COMPANY*/
+.company h4 {
+  color: #667085;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+.company .logo-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f6f6f6;
+  height: 8.6rem;
+  border-radius: 5px;
+  margin-bottom: 8.8rem;
+}
+.company .logo-company img {
+  height: 2rem;
+}
+
+/*SECTION BRANDING*/
+.branding {
+  display: flex;
+  justify-content: center;
+}
+.branding h2 {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+.branding p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+}
+i {
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+.branding img {
+  width: 38rem;
+  margin-bottom: 12rem;
+}
+
+/*SECTION CUSTOME*/
+.custome {
+  display: flex;
+  justify-content: center;
+}
+.custome h2 {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+.custome p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+}
+.custome img {
+  width: 35rem;
+  margin-bottom: 12rem;
+}
+
+/*SECTION TESTIMONIALS*/
+.testimonial h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.testimonial h2 {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+.testimonial .content-testimonial {
+  height: 30rem;
+  width: 33.4rem;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-testimonial h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2.7rem;
+}
+.content-testimonial p {
+  font-size: 1.4rem;
+  width: 28rem;
+}
+.content-testimonial img {
+  width: 13rem;
+}
+/*SECTION CONTACT*/
+.contact {
+  margin-top: 12rem;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  height: 33rem;
+  margin-bottom: 12rem;
+}
+.contact h2 {
+  font-size: 3rem;
+  padding: 5.6rem 3.5rem 3.2rem 3.5rem;
+}
+.contact p {
+  font-size: 1.4rem;
+  margin-bottom: 4.8rem;
+}
+
+/*footer */
+.footer {
+  background-color: #f6f6f6;
+  padding: 10rem 0 8rem 0;
+}
+.footer a {
+  color: #272d38;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer h5 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.footer p {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+  padding-inline: 8rem;
+}
+.rodape {
+  position: relative;
+  top: -3rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 950px) {
+  nav .menu-btn i {
+    display: flex;
+  }
+  nav ul {
+    position: fixed;
+    top: 7vh;
+    right: -100%;
+    background-color: #23232e;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease-in;
+  }
+  nav ul.open,
+  .main.open {
+    right: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 50px 0;
+  }
+  nav ul li a {
+    font-size: 23px;
+  }
+  nav ul li a:hover {
+    background-color: none;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
