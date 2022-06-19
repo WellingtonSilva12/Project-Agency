@@ -35,11 +35,13 @@ li a:hover {
 nav {
   display: flex;
   height: 8vh;
-  width: 100%;
+  max-width: 100%;
   background-color: #23232e;
   align-items: center;
   justify-content: space-around;
+  /* padding-inline: 20rem; */
 }
+
 nav .logo {
   color: #fff;
   font-size: 2rem;
@@ -246,9 +248,45 @@ i {
   font-size: 1.1rem;
 }
 
-@media (max-width: 950px) {
-  nav .menu-btn i {
+@media (max-width: 768px) {
+  nav .menu-btn {
     display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .icon-menu {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .icon-menu::after,
+  .icon-menu::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: all 0.4s ease-in;
+    position: relative;
+  }
+  nav.open .icon-menu {
+    border-top-color: transparent;
+  }
+  nav.open .icon-menu::before {
+    transform: rotate(135deg);
+  }
+  nav.open .icon-menu::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  nav .menu-btn i {
+    display: block;
   }
   nav ul {
     position: fixed;
@@ -269,6 +307,7 @@ i {
   nav ul li {
     width: 100%;
     margin: 50px 0;
+    animation: navLinkFade 0.5s ease forwards;
   }
   nav ul li a {
     font-size: 23px;
@@ -278,13 +317,92 @@ i {
   }
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+@media (min-width: 768px) {
+  .wrapper {
+    width: 90vw;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .container-hero {
+    display: flex;
+    text-align: left;
+    margin-top: 45px;
+    gap: 7.5rem;
+  }
+  .container-hero h1 {
+    font-size: 4.6rem;
+    width: 40rem;
+  }
+  .container-hero p {
+    width: 380px;
+  }
+  .content-hero img {
+    height: 45rem;
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .company .logo-company {
+    margin: auto;
+    width: 100rem;
+    gap: 5rem;
+    margin-bottom: 13.6rem;
+  }
+  .company .logo-company img {
+    height: 3.8rem;
+  }
+  .branding .container-branding {
+    display: flex;
+    text-align: left;
+    gap: 12rem;
+  }
+  .branding .content-branding {
+    width: 380px;
+  }
+  .content-branding h2 {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  .content-branding p {
+    font-size: 1.4rem;
+    width: 320px;
+  }
+  .container-branding i {
+    transform: rotate(-90deg);
+  }
+  .branding .container-branding img {
+    width: 45rem;
+  }
+
+  .custome .container-custome {
+    display: flex;
+    text-align: left;
+    gap: 12rem;
+    margin-top: 8rem;
+  }
+  .content-custome {
+    width: 350px;
+  }
+  .content-custome h2 {
+    font-size: 4rem;
+  }
+  .container-custome p {
+    width: 280px;
+  }
+  .container-custome i {
+    transform: rotate(-90deg);
+  }
+  .text-title h2 {
+    margin-inline: auto;
+    font-size: 4rem;
+    max-width: 450px;
+    padding-inline: 35px;
+    margin-bottom: 3.8rem;
+  }
+  .testimonial .container-testimonial {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
   }
 }
