@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   text-align: center;
@@ -221,8 +222,16 @@ i {
 }
 
 /*footer */
-.footer {
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f6f6f6;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
   padding: 10rem 0 8rem 0;
 }
 .footer a {
@@ -238,12 +247,37 @@ i {
 .footer p {
   font-size: 1.4rem;
   margin-bottom: 2.4rem;
-  padding-inline: 8rem;
 }
 .rodape {
   position: relative;
   top: -3rem;
   font-size: 1.1rem;
+}
+
+.swiper {
+  width: 950px;
+}
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: #7d2ae8;
 }
 
 @media (max-width: 768px) {
@@ -314,7 +348,7 @@ i {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 540px) {
   .wrapper {
     width: 90vw;
   }
@@ -342,7 +376,7 @@ i {
   }
   .company .logo-company {
     margin: auto;
-    width: 100rem;
+    width: 90vw;
     gap: 5rem;
     margin-bottom: 13.6rem;
   }
@@ -352,7 +386,7 @@ i {
   .branding .container-branding {
     display: flex;
     text-align: left;
-    gap: 12rem;
+    gap: 7.5rem;
   }
   .branding .content-branding {
     width: 380px;
@@ -375,7 +409,7 @@ i {
   .custome .container-custome {
     display: flex;
     text-align: left;
-    gap: 12rem;
+    gap: 7.5rem;
     margin-top: 8rem;
   }
   .content-custome {
@@ -401,5 +435,12 @@ i {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+  }
+  .footer {
+    padding-inline: 8rem;
+    justify-content: space-evenly;
+  }
+  .footer .title-footer {
+    width: 150px;
   }
 }
