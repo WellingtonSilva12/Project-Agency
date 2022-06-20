@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -39,7 +39,6 @@ nav {
   background-color: #23232e;
   align-items: center;
   justify-content: space-around;
-  /* padding-inline: 20rem; */
 }
 
 nav .logo {
@@ -59,7 +58,6 @@ nav ul li a {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3 ease;
@@ -265,7 +263,7 @@ i {
   }
   .icon-menu::after,
   .icon-menu::before {
-    content: "";
+    content: '';
     display: block;
     width: 20px;
     height: 2px;
@@ -307,7 +305,6 @@ i {
   nav ul li {
     width: 100%;
     margin: 50px 0;
-    animation: navLinkFade 0.5s ease forwards;
   }
   nav ul li a {
     font-size: 23px;
